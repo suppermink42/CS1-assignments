@@ -17,14 +17,8 @@ int main(){
     getScore(scoreD);
     getScore(scoreE);
 
-
     cout << findLowest(scoreA, scoreB, scoreC, scoreD, scoreE) << endl;
-    
 
-   
-
-
-   
 }
 
 void getScore(int &score){
