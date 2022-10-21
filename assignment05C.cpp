@@ -19,6 +19,7 @@ int main(){
 
     cout << findLowest(scoreA, scoreB, scoreC, scoreD, scoreE) << endl;
 
+    system("pause");
 }
 
 void getScore(int &score){
