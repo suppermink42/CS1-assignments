@@ -39,21 +39,34 @@ void calcAverage(int& score1, int& score2, int& score3, int& score4, int& score5
 };
 
 
-int findLowest(int &score1A, int &score1B, int &score1C, int &score1D, int &score1E) {
-    if (score1A < score1B && score1A < score1C && score1A < score1D && score1A < score1E) {
+int findLowest(int &score1A, int &score1B, int &score1C, int &score1D, int &score1E){
+    int input[] = {score1A,score1B,score1C,score1D,score1E};
+    
+    int low = input[0];
+    int index = 0;
+
+    for(int i = 0; i < 5; i++){
+        if (low > input[i]){
+            low = input[i];
+            index = i;           
+        }
+                
+    }
+
+
+    if (input[index] == input[0]){
         score1A = 0;
     }
-    else if (score1B < score1A && score1B < score1C && score1B < score1D && score1B < score1E) {
+    else if(input[index] == input[1]){
         score1B = 0;
     }
-    else if (score1C < score1A && score1C < score1B && score1C < score1D && score1C < score1E) {
+    else if(input[index] == input[2]){
         score1C = 0;
     }
-    else if (score1D < score1A && score1D < score1B && score1D < score1C && score1D < score1E) {
+    else if(input[index] == input[3]){
         score1D = 0;
-
     }
-    else if (score1E < score1A && score1E < score1B && score1E < score1C && score1E < score1D) {
+    else if(input[index] == input[4]){
         score1E = 0;
     }
     return 0;
