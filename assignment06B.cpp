@@ -33,7 +33,7 @@ int main(){
     average = total / 12;
 
     cout << "Total: " << total << endl; 
-    cout << "Average " << average << endl;
+    cout << "Average" << average << endl;
     cout << "Lowest is: " << smallest << endl;
     cout << "Largest is: " << largest << endl;
    
