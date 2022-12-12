@@ -2,6 +2,7 @@
     "tasks": [
         {
             "type": "cppbuild",
+<<<<<<< HEAD
             "label": "C/C++: clang++ build active file",
             "command": "/usr/bin/clang++",
             "args": [
@@ -11,6 +12,16 @@
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
+=======
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+>>>>>>> ce0042c78b0f15ff5b0c8b5467f88e86923c64dd
             ],
             "options": {
                 "cwd": "${fileDirname}"
