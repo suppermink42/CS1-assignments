@@ -21,6 +21,7 @@ int main() {
     
     calcAverage(scoreA, scoreB, scoreC, scoreD, scoreE);
 
+    system("pause");
 }
 
 void getScore(int& score) {
