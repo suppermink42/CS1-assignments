@@ -70,7 +70,8 @@ int main(){
         cout << "The words are not the same\n";
     }
 
-    //sort(word, sizeof(word) / sizeof(char));
+    sort(word, sizeof(word) / sizeof(char));
+    //this is only for experiment
 
     
 }
