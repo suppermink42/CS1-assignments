@@ -62,16 +62,25 @@ int main(){
     cout << "The last character in the word: " << word2[wordF2 - 1] << endl;
 
     cout << "--------------------------------------------------\n";
-
+    /*
     if(strcmp(word,word2) == 0){
         cout << "The words are the same \n";
     }
     else{
         cout << "The words are not the same\n";
     }
+    */
 
-    sort(word, sizeof(word) / sizeof(char));
-    //this is only for experiment
-
+    if(word > word2){
+        cout << "Alphabetically printed\n";
+        cout << word2 << "\n";
+        cout << word << "\n";
+    }
+    else{
+        cout << "Alphabetically printed\n";
+        cout << word << "\n";
+        cout << word2 << "\n";
+    }
+    
     
 }
