@@ -1,57 +1,52 @@
 #include <iostream>
-#include <cstring>
-#include <algorithm>
-
+//#include <string>
 using namespace std;
-const int SIZE = 280;
+
 
 int main(){
-    char word[SIZE];
-    char word2[SIZE];
+    string word;
+    string word2;
     int total;
     
     cout << "Enter two words" << endl;
     
-    cin.getline(word,SIZE);
-    cin.getline(word2,SIZE);
+    getline(cin,word);
+    getline(cin,word2);
 
     cout << "Whole first word is " << word << endl;
     cout << "Whole second word is " << word2 << endl;
 
     cout << "First Word Upper Case: " << endl;
-    for(int i = 0; i < strlen(word); i++){
-        cout << (char)toupper(word[i]);
-    }   
-    cout << endl;
+    for(char& c : word){
+        c = toupper(c);
+    }
+    cout << word << "\n";
 
-    //Sec
+    //Sec Done
     cout << "Second Word Upper Case: " << endl;
-    for(int i = 0; i < strlen(word2); i++){
-        cout << (char)toupper(word2[i]);
-    }   
-    cout << endl;
+    for(char& c : word2){
+        c = toupper(c);
+    }
+    cout << word2 << "\n";
 
     cout << "First Lower Case Word " << endl;;
-    for(int i = 0; i < strlen(word); i++){
-        cout << (char)tolower(word[i]);
-    }  
-    cout << endl;
+    for(char& c : word){
+        c = tolower(c);
+    }
+    cout << word << "\n";
 
-    //Sec
+    //Sec Done2
     cout << "Second Lower Case Word" << endl;;
-    for(int i = 0; i < strlen(word2); i++){
-        cout << (char)tolower(word2[i]);
-    }  
-    cout << endl;
+   for(char& c : word2){
+        c = tolower(c);
+    }
+    cout << word2 << "\n";
     
 
-    /*for(int i = 0; i < strlen(word); i++){
-            total++;   
-    }
-    */
+    
 
-    int wordF = strlen(word);
-    int wordF2 = strlen(word2);
+    int wordF = word.length();
+    int wordF2 = word2.length();
     cout << "The total number of characters in the word: " << wordF <<" and in the second word "<< wordF2 << endl;  
 
     cout << "The first character in the first word: " << word[0] << endl;
@@ -63,7 +58,7 @@ int main(){
 
     cout << "--------------------------------------------------\n";
     
-    if(strcmp(word,word2) == 0){
+    if(word == word2){
         cout << "The words are the same \n";
     }
     else{
