@@ -1,12 +1,6 @@
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main(){
-    string word = "hello";
-
-    for(char& c : word){
-        c = toupper(c);
-    }
-    cout << word << "\n";
-}
+void displayRecord(inventory &costco){
+    cout << "The item name is:\n " << costco.item;
+    cout << "The quantity of item:\n " << costco.quantity;
+    cout << "The wholesale cost is:\n " << costco.costW;
+    cout << "The retail cost is:\n " << costco.cost;
+};
